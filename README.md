@@ -1,4 +1,4 @@
-#linux QT
+# linux QT
 
 ## tetrix
 
