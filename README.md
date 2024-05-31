@@ -65,7 +65,7 @@ ubuntu@ubuntu06:~/QtExamples/p657$ ./hello
 ```
 #include <QLabel>
 ```
-> QLabel 클래스는 QFrame 클래스를 상속 받고,
+> QLabel 클래스는 QFrame 클래스를 상속 받고,   
 > QFrame 클래스는 QWidget 클래스를 상속 받기에 QWidget 메소드를 사용할 수 있다
 
 ![image](https://github.com/tina908/Linux-Qt/assets/68736697/f75b12d4-bc9f-4e8a-a59f-49e0cde567fb)
@@ -92,9 +92,9 @@ ubuntu@ubuntu06:~/QtExamples/p664$ ./button
 ```
 QObject::connect(button, SIGNAL(clicked()), &app, SLOT(quit()));
 ```
-> QT는 이벤트 처리를 위해 SIGNAL과 SLOT구조를 사용한다
-> 버튼 클릭 이벤트에 반응이 이뤄지려면 각 객체들의 SIGNAL과 SLOT를 연결해야 한다
-> QObject 클래스는 SIGNAL과 SLOT을 연결하기 위해 connect() static 메소드를 제공한다
+> QT는 이벤트 처리를 위해 SIGNAL과 SLOT구조를 사용한다   
+> 버튼 클릭 이벤트에 반응이 이뤄지려면 각 객체들의 SIGNAL과 SLOT를 연결해야 한다   
+> QObject 클래스는 SIGNAL과 SLOT을 연결하기 위해 connect() static 메소드를 제공한다   
 
 ```
 QObject::connect(시그널을 발생 시킬 객체의 포인터, 앞 객체가 발생 시키는 시그널, 시그널을 받을 객체의 포인터, 앞 객체에 슬롯 지정)
