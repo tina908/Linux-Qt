@@ -117,6 +117,31 @@ ubuntu@ubuntu06:~/QtExamples/p665$ ./custom
 
 > BUTTON 버튼을 누르면 종료한다
 
+```
+QObject::connect(button, SIGNAL(clicked()), qApp, SLOT(quit()));
+```
+> 시그널에서 사용자 정의 슬롯을 호출한 후,
+> 슬롯에서 시그널을 다시 발생하는 경우에
+> 시그널과 시그널을 바로 연결할 수 있디
+
+```
+QObject::connect(button, SIGNAL(clicked()), this, SLOT(processClick()));
+QObject::connect(this, SIGNAL(widgetClicked()), qApp, SLOT(quit()));
+```
+> 동일한 기능이다
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
