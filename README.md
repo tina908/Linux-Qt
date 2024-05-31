@@ -128,7 +128,7 @@ QObject::connect(button, SIGNAL(clicked()), qApp, SLOT(quit()));
 QObject::connect(button, SIGNAL(clicked()), this, SLOT(processClick()));
 QObject::connect(this, SIGNAL(widgetClicked()), qApp, SLOT(quit()));
 ```
-> 동일한 기능이다
+> 동일한 기능의 코드다
 
 
 
