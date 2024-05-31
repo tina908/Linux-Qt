@@ -1,5 +1,7 @@
 # linux QT
-
+```
+https://doc.qt.io/archives/qt-5.14/qlabel.html
+```
 ## 명령어
 ```
 qmake -project
@@ -52,6 +54,44 @@ ubuntu@ubuntu06:~/QtExamples/tetrix$ ./tetrix
 >우분투 가상머신의 터미널 안에서 실행해야 한다
 
 ## tetrixPi
+![image](https://github.com/tina908/Linux-Qt/assets/68736697/91db97f1-7f4c-40c1-9275-78b746c8b427)
+
+> 디바이스 드라이버를 이용해 ledkey가 테스리스의 방향키 역할을 할 수 있다
+
+> 1번 키 : 왼쪽으로 방향 꺽기   
+> 2번 키 : 오른쪽으로 방향 꺽기     
+> 3번 키 : 왼쪽으로 이동     
+> 4번 키 : 오른쪽으로 이동 
+> 5번 키 : 스타트    
+> 6번 키 : 바로 떨어지기    
+> 7번 키 : 초기화    
+> 8번 키 : 정지/정지 해제       
+
+### 에러 창 발생 시
+![image](https://github.com/tina908/Linux-Qt/assets/68736697/93cb001e-e09b-4c04-b796-4548ecaa3ba3)
+> 디바이스 드라이버를 사용하기 위해 raspberry에서 실행한다    
+> raspberry에서 실행해도 에러가 발생할 땐 ledkey 모듈 적제가 되지 않았을 때 발생한다
+
+```
+pi@pi06:/mnt/ubuntu_nfs $ sudo mknod /dev/ledkey_dev c 230 0
+
+pi@pi06:/mnt/ubuntu_nfs $ sudo chmod 666 /dev/ledkey_dev
+
+pi@pi06:/mnt/ubuntu_nfs $ sudo insmod ledkey_dev.ko
+
+```
+> ledkey 모듈을 적재 해준 뒤 실행한다
+
+```
+pi@pi06:/mnt/ubuntu_nfs/QtExampels/tetrixPi $ ./tetrix
+```
+
+![image](https://github.com/tina908/Linux-Qt/assets/68736697/54bb2393-fc62-4929-88ba-309c6b0ea975)
+
+
+
+![image](https://github.com/tina908/Linux-Qt/assets/68736697/44be8575-b1a0-417a-b31f-4510132eaa89)
+
 
 ## p657
 ```
@@ -78,6 +118,8 @@ QApplication app(argc, argv);
 
 ## p664
 ```
+ubuntu@ubuntu06:~/QtExamples/p664$ qmake -project -o button
+
 ubuntu@ubuntu06:~/QtExamples/p664$ qmake
 
 ubuntu@ubuntu06:~/QtExamples/p664$ make
@@ -131,8 +173,7 @@ QObject::connect(this, SIGNAL(widgetClicked()), qApp, SLOT(quit()));
 > 동일한 기능의 코드다
 
 
-
-
+## SensorMan_KYJ
 
 
 
