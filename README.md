@@ -100,7 +100,7 @@ QObject::connect(시그널을 발생 시킬 객체의 포인터, 앞 객체가 �
 ```
 QObject::connect(button, SIGNAL(clicked()), &app, SLOT(quit()));
 ```
-> 버튼의 clicked() 시그널이 QApplication의 quit() 슬롯에 연결
+> 버튼의 clicked() 시그널이 QApplication의 quit() 슬롯에 연결   
 >  버튼이 클릭되면 애플리케이션이 종료되도록 설정
 
 
