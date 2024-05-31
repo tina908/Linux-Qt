@@ -175,6 +175,11 @@ QObject::connect(this, SIGNAL(widgetClicked()), qApp, SLOT(quit()));
 
 ## SensorMan_KYJ
 
+![스크린샷 2024-05-31 173848](https://github.com/tina908/Linux-Qt/assets/68736697/c099d5fe-b6f7-4568-b502-92351a7edfd6)
+
+![스크린샷 2024-05-31 173853](https://github.com/tina908/Linux-Qt/assets/68736697/d1381536-78e7-4726-bfe3-e516a96f32a0)
+
+![스크린샷 2024-05-31 173900](https://github.com/tina908/Linux-Qt/assets/68736697/9ca6ce07-4b3f-4e8c-81d7-ab04cc7de195)
 
 
 
